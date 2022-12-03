@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Headers-->
+    <div id="headers">
+      <header id="main-header">
+        <h1>the collection of my projects</h1>
+        <a class="project" href="Karim's website.html" target="_blank"
+          >HTML project</a
+        >
+      </header>
+
+      <header id="second-header">
+        <h1>Sections</h1>
+        <ul>
+          <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
+          <li class="middle">
+            <a class="list-links" href="#wor">Would You Rather</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <h1 id="survey-title">My Survey Form</h1>
+
+    <!--Form-->
+    <form action="" id="form-id">
+      <div class="form">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter Name" />
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Email</label>
+        <input type="email" name="email" placeholder=" Enter Email" />
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Password</label>
+        <input type="password" name="pass" placeholder="Enter Password" />
+      </div>
+
+      <div class="form">
+        <label>Age</label>
+        <input type="number" name="age" placeholder=" Enter Your Age" />
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Phone number</label>
+        <input
+          type="number"
+          name="phone number"
+          placeholder="Enter Phone Number"
+        />
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Date of birth</label>
+        <input type="date" name="dob" />
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Favorite color</label>
+        <select name="favorite color">
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="cyan">Cyan</option>
+          <option value="blue">Blue</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="form">
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div class="form">
+        <label>Favorite Fruit</label><br />
+        <select name="fruit">
+          <option value="apple">Apple</option>
+          <option value="orange">Orange</option>
+          <option value="banana">Banana</option>
+          <option value="mango">Mango</option>
+          <option value="watermelon">Watermelon</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label>What word better discribes your personality?</label><br />
+        <select name="personality">
+          <option value="friendly">Friendly</option>
+          <option value="helpful">Helpful</option>
+          <option value="sportive">Sportive</option>
+          <option value="agressive">Agressive</option>
+          <option value="quite">Quite</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label>Wake up time</label>
+        <input type="time" />
+      </div>
+
+      <div class="form">
+        <label>Sleep time</label>
+        <input type="time" />
+      </div>
+
+      <div class="radio">
+        <label>What would you do in your free time?</label> <br />
+        <input type="radio" name="free-time" />
+        <label>Play video games</label>
+        <br />
+
+        <input type="radio" name="free-time" />
+        <label>Learn something new</label>
+        <br />
+
+        <input type="radio" name="free-time" />
+        <label>Sleep</label>
+        <br />
+
+        <input type="radio" name="free-time" />
+        <label>Other</label>
+        <br />
+      </div>
+      <br />
+      <br />
+
+      <label>Check all the languages that you can code</label>
+      <br />
+      <input type="checkbox" name="Javascript" />
+      <label>Javascript</label>
+      <br />
+      <input type="checkbox" name="Typescript" />
+      <label>Typescript</label>
+      <br />
+      <input type="checkbox" name="HTML" />
+      <label>HTML</label>
+      <br />
+      <input type="checkbox" name="CSS" />
+      <label>CSS</label>
+      <br />
+      <input type="checkbox" name="C#" />
+      <label>C#</label>
+      <br />
+      <input type="checkbox" name="C" />
+      <label>C</label>
+      <br />
+      <input type="checkbox" name="C++" />
+      <label>C++</label>
+      <br />
+      <input type="checkbox" name="Python" />
+      <label>Python</label>
+      <br />
+      <input type="checkbox" name="React" />
+      <label>React</label>
+      <br />
+      <br />
+
+      <!--Textarea-->
+      <label>Message</label><br />
+      <textarea placeholder="Any thing to add"></textarea>
+      <br />
+
+      <p class="middle" id="test">make sure to submit of course</p>
+    </form>
+    <!--/form-->
+    <hr />
+
+    <div id="wor">
+      <div class="radio">
+        <h1>Would You Rather</h1>
+        <br />
+        <label>Eat</label>
+        <br />
+
+        <input type="radio" name="eat" />
+        <label>Raw Fish</label>
+        <br />
+
+        <input type="radio" name="eat" />
+        <label>Rotten Chocolate</label>
+        <br />
+
+        <input type="radio" name="eat" />
+        <label>3 Ice Creams in Winter</label>
+        <br />
+        <br />
+
+        <label>Do</label>
+        <br />
+
+        <input type="radio" name="do" />
+        <label>Swim for 3 hours non-stop</label>
+        <br />
+
+        <input type="radio" name="do" />
+        <label>Wear 5 T-shirts in Summer for a week</label>
+        <br />
+
+        <input type="radio" name="do" />
+        <label>Look at the sun for 1 minute</label>
+        <br />
+        <br />
+
+        <label>Excrise</label>
+        <br />
+
+        <input type="radio" name="excrise" />
+        <label>Do 50 push ups in a row</label>
+        <br />
+
+        <input type="radio" name="excrise" />
+        <label>Run for 1 hour as fast as you can</label>
+        <br />
+
+        <input type="radio" name="excrise" />
+        <label>Hop 100 times non-stop</label>
+        <br />
+        <br />
+
+        <!--submit-->
+        <p class="middle"><button onclick="myFunction()">Submit</button></p>
+        <br />
+
+        <p class="middle">If you want to know more here is the needed info</p>
+        <p></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Karim</td>
+              <td>10</td>
+              <td>Male</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+    </div>
+
+    <!--Last thing before footer-->
+    <p class="middle"><a class="project" href="#">Back to top</a></p>
+
+    <ul>
+      <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
+      <li class="middle">
+        <a class="list-links" href="#wor">Would You Rather</a>
+      </li>
+    </ul>
+
+    <!--Footer-->
+    <footer id="main-footer">
+      <ul>
+        <li><div id="cursor" onclick="openModal()">Share</div></li>
+        <li><div id="cursor" onclick="openModalForMore()">More...</div></li>
+      </ul>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="screen"></div>
+      <div class="modal-content">
+        <h1>Share via...</h1>
+        <br />
+
+        <div class="flex">
+          <a
+            class="flex-item"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCJDfJLfnMwPZkCtKSptdwHvzFwddqHLKrSZzxzdRJpZFcXvQsdDLpFDkgtbHRKjKGHXJV"
+            target="_blank"
+            >Email</a
+          >
+
+          <a class="flex-item" href="https://www.yahoo.com/" target="_blank"
+            >Yahoo</a
+          >
+
+          <a class="flex-item" href="https://www.twitter.com/" target="_blank"
+            >Twitter</a
+          >
+
+          <a class="flex-item" href="" target="_blank">hi</a>
+        </div>
+
+        <!--close button-->
+        
+        <div class="close">
+          <button onclick="closeModal()">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <!--another modal-->
+
+    <div class="more">
+      <div class="screen"></div>
+      <div class="modal-content">
+        <h1>More...</h1>
+        <br />
+
+        <div class="flex">
+          <a
+            class="flex-item"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCJDfJLfnMwPZkCtKSptdwHvzFwddqHLKrSZzxzdRJpZFcXvQsdDLpFDkgtbHRKjKGHXJV"
+            target="_blank"
+            >Contact</a
+          >
+
+          <a class="flex-item" href="../New website.zip/" download target="_blank"
+            >Download the website</a
+          >
+        </div>
+        <div class="close">
+          <button onclick="closeModalForMore()">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
