@@ -6,18 +6,30 @@ const modal = document.querySelector(".modal");
 
 function openModal() {
   modal.style.display = "flex";
+  modal.classList.add('fade-in');
+  modal.classList.remove('fade-out');
 }
 
 function closeModal() {
-  modal.style.display = "none";
+  modal.classList.add('fade-out');
+  modal.classList.remove('fade-in');
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 500);
 }
 
 const more = document.querySelector(".more");
 
 function openModalForMore() {
   more.style.display = "flex";
+  more.classList.add('fade-in');
+  more.classList.remove('fade-out');
 }
 
 function closeModalForMore() {
-  more.style.display = "none";
+  more.classList.add('fade-out');
+  more.classList.remove('fade-in');
+  setTimeout(() => {
+    more.style.display = "none";
+  }, 500);
 }

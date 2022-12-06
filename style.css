@@ -57,7 +57,7 @@ h1 {
   margin: 0;
   width: 100%;
 }
-.middle {
+.middle{
   text-align: center;
 }
 textarea {
@@ -77,7 +77,7 @@ textarea {
   color: black;
   padding: 2px;
 }
-.project:hover {
+.project:hover{
   background-color: red;
 }
 #wor {
@@ -92,19 +92,24 @@ table {
   border-collapse: collapse;
   border: 2px solid black;
   margin-bottom: 10px;
+  width: 190px;
+}
+td,th{
+  text-align: left;
+  padding-left: 3px;
 }
 li {
   display: inline-block;
   padding: 5px;
 }
 li a {
-  color: black;
-  text-decoration: none;
+  color:black;
+  text-decoration: none; 
 }
-ul {
+ul{
   text-align: center;
 }
-.modal {
+.modal{
   position: fixed;
   top: 0;
   left: 0;
@@ -113,8 +118,9 @@ ul {
   display: none;
   justify-content: center;
   align-items: center;
+
 }
-.more {
+.more{
   position: fixed;
   top: 0;
   left: 0;
@@ -123,6 +129,7 @@ ul {
   display: none;
   justify-content: center;
   align-items: center;
+
 }
 .screen {
   background-color: black;
@@ -134,45 +141,93 @@ ul {
   opacity: 0.7;
   z-index: 1;
 }
-.modal-content {
+.modal-content{
   background-color: white;
-  width: 60%;
-  padding: 2em;
-  height: 400px;
+  height: 490px;
   border-radius: 10px;
   z-index: 2;
   position: relative;
+  width: 41%;
 }
-#cursor {
+.cursor{
   cursor: pointer;
 }
-a {
+a{
   text-decoration: none;
   color: black;
 }
-.close {
+.close{
   position: absolute;
   bottom: 20px;
-  width: 85%;
+  width: 100%;
   text-align: center;
 }
-.flex {
+.flex{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
 }
-.flex-item {
+.flex-item{
   width: 50%;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 10px;
 }
-label:hover {
-  cursor: pointer;
+.modal-content a{
+  color: rgb(1 100 180);
 }
-input [type="checkbox"]:hover {
-  cursor: pointer;
+.modal-content a:hover{
+text-decoration: underline;
 }
-input [type="hover"]:hover {
-  cursor: pointer;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 20%;
+}
+.share-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+svg {
+  width: 26px;
+  fill: grey;
+  border-radius: 3px;
+}
+::selection{
+  background-color: blue;
+  color: white;
+}
+
+.fade-in {
+  animation-name: FadeIn;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.fade-out {
+  animation-name: FadeOut;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
