@@ -33,3 +33,15 @@ function closeModalForMore() {
     more.style.display = "none";
   }, 500);
 }
+
+const loader = document.querySelector(".loader")
+
+const topContainer = document.querySelector(".top-container");
+const loaderContainer = document.querySelector(".loader-container");
+
+function showPage() {
+  topContainer.style.display = 'unset';
+  loaderContainer.style.display = 'none';
+}
+
+setTimeout(showPage, 2000);

@@ -17,288 +17,290 @@
     <link rel="stylesheet" href="css/styles.css">
   
   
-    <!--Headers-->
-    <div id="headers">
-      <header id="main-header">
-        <h1>the collection of my projects</h1>
-        <a class="project" href="https://karimhatemhosny.github.io/karim-website/" target="_blank">HTML project</a>
-      </header>
-
-      <header id="second-header">
-        <h1>Sections</h1>
-        <ul>
-          <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
-          <li class="middle">
-            <a class="list-links" href="#wor">Would You Rather</a>
-          </li>
-        </ul>
-      </header>
-    </div>
-
-    <h1 id="survey-title">My Survey Form</h1>
-
-    <!--Form-->
-    <form action="" id="form-id">
-      <div class="form">
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Enter Name">
+    <div class="top-container">
+      <!--Headers-->
+      <div id="headers">
+        <header id="main-header">
+          <h1>the collection of my projects</h1>
+          <a class="project" href="https://karimhatemhosny.github.io/karim-website/" target="_blank">HTML project</a>
+        </header>
+  
+        <header id="second-header">
+          <h1>Sections</h1>
+          <ul>
+            <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
+            <li class="middle">
+              <a class="list-links" href="#wor">Would You Rather</a>
+            </li>
+          </ul>
+        </header>
       </div>
-      <br>
-
-      <div class="form">
-        <label>Email</label>
-        <input type="email" name="email" placeholder=" Enter Email">
+  
+      <h1 id="survey-title">My Survey Form</h1>
+  
+      <!--Form-->
+      <form action="" id="form-id">
+        <div class="form">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Enter Name">
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Email</label>
+          <input type="email" name="email" placeholder=" Enter Email">
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Password</label>
+          <input type="password" name="pass" placeholder="Enter Password">
+        </div>
+  
+        <div class="form">
+          <label>Age</label>
+          <input type="number" name="age" placeholder=" Enter Your Age">
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Phone number</label>
+          <input type="number" name="phone number" placeholder="Enter Phone Number">
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Date of birth</label>
+          <input type="date" name="dob">
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Favorite color</label>
+          <select name="favorite color">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="cyan">Cyan</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+          </select>
+        </div>
+        <br>
+  
+        <div class="form">
+          <label>Gender</label>
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <br>
+        <div class="form">
+          <label>Favorite Fruit</label><br>
+          <select name="fruit">
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="watermelon">Watermelon</option>
+          </select>
+        </div>
+  
+        <div class="form">
+          <label>What word better discribes your personality?</label><br>
+          <select name="personality">
+            <option value="friendly">Friendly</option>
+            <option value="helpful">Helpful</option>
+            <option value="sportive">Sportive</option>
+            <option value="agressive">Agressive</option>
+            <option value="quite">Quite</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+  
+        <div class="form">
+          <label>Wake up time</label>
+          <input type="time">
+        </div>
+  
+        <div class="form">
+          <label>Sleep time</label>
+          <input type="time">
+        </div>
+  
+        <div class="radio">
+          <label>What would you do in your free time?</label> <br>
+  
+          <input type="radio" name="free-time" id="pvd">
+          <label class="cursor" for="pvd">Play video games</label>
+          <br>
+  
+          <input type="radio" name="free-time" id="lrnsmthn">
+          <label class="cursor" for="lrnsmthn">Learn something new</label>
+          <br>
+  
+          <input type="radio" name="free-time" id="sleep">
+          <label class="cursor" for="sleep">Sleep</label>
+          <br>
+  
+          <input type="radio" name="free-time" id="other">
+          <label class="cursor" for="other">Other</label>
+          <br>
+        </div>
+        <br>
+        <br>
+  
+        <label>Check all the languages that you can code</label>
+        <br>
+        <input type="checkbox" id="js" name="Javascript">
+        <label class="cursor" for="js">Javascript</label>
+        <br>
+        <input type="checkbox" id="ts" name="Typescript">
+        <label class="cursor" for="ts">Typescript</label>
+        <br>
+        <input type="checkbox" id="j" name="Java">
+        <label class="cursor" for="j">Java</label>
+        <br>
+        <input type="checkbox" id="html" name="HTML">
+        <label class="cursor" for="html">HTML</label>
+        <br>
+        <input type="checkbox" id="css" name="CSS">
+        <label class="cursor" for="css">CSS</label>
+        <br>
+        <input type="checkbox" id="c#" name="C#">
+        <label class="cursor" for="c#">C#</label>
+        <br>
+        <input type="checkbox" id="c" name="C">
+        <label class="cursor" for="c">C</label>
+        <br>
+        <input type="checkbox" id="c++" name="C++">
+        <label class="cursor" for="c++">C++</label>
+        <br>
+        <input type="checkbox" id="python" name="Python">
+        <label class="cursor" for="python">Python</label>
+        <br>
+        <input type="checkbox" id="php" name="php">
+        <label class="cursor" for="php">Php</label>
+        <br>
+        <input type="checkbox" id="vue" name="vue">
+        <label class="cursor" for="vue">Vue</label>
+        <br>
+        <input type="checkbox" id="react" name="React">
+        <label class="cursor" for="react">React</label>
+        <br>
+        <input type="checkbox" id="r" name="R">
+        <label class="cursor" for="r">R</label>
+        <br>
+        <br>
+  
+        <!--Textarea-->
+        <label>Message</label><br>
+        <textarea placeholder="Any thing to add, max characters 500" maxlength="500"></textarea>
+        <br>
+  
+        <p class="middle" id="test">make sure to submit of course</p>
+      </form>
+      <!--/form-->
+      <hr>
+  
+      <div id="wor">
+        <div class="radio">
+          <h1>Would You Rather</h1>
+          <br>
+          <label>Eat</label>
+          <br>
+  
+          <input type="radio" name="eat" id="rf">
+          <label class="cursor" for="rf">Raw Fish</label>
+          <br>
+  
+          <input type="radio" name="eat" id="rc">
+          <label class="cursor" for="rc"> Rotten Chocolate</label>
+          <br>
+  
+          <input type="radio" name="eat" id="icw">
+          <label class="cursor" for="icw">3 Ice Creams in Winter</label>
+          <br>
+          <br>
+  
+          <label>Do</label>
+          <br>
+  
+          <input type="radio" name="do" id="swim">
+          <label class="cursor" for="swim">Swim for 3 hours non-stop</label>
+          <br>
+  
+          <input type="radio" name="do" id="tshirt">
+          <label class="cursor" for="tshirt">Wear 5 T-shirts in Summer for a week</label>
+          <br>
+  
+          <input type="radio" name="do" id="sun">
+          <label class="cursor" for="sun">Look at the sun for 1 minute</label>
+          <br>
+          <br>
+  
+          <label>Excrise</label>
+          <br>
+  
+          <input type="radio" name="excrise" id="pushups">
+          <label class="cursor" for="pushups">Do 50 push ups in a row</label>
+          <br>
+  
+          <input type="radio" name="excrise" id="run">
+          <label class="cursor" for="run">Run for 1 hour as fast as you can</label>
+          <br>
+  
+          <input type="radio" name="excrise" id="hop">
+          <label class="cursor" for="hop">Hop 100 times non-stop</label>
+          <br>
+          <br>
+  
+          <!--submit-->
+          <p class="middle"><button onclick="myFunction()">Submit</button></p>
+          <br>
+  
+          <p class="middle">If you want to know more here is the needed info</p>
+          <p></p>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Karim</td>
+                <td>10</td>
+                <td>Male</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
       </div>
-      <br>
-
-      <div class="form">
-        <label>Password</label>
-        <input type="password" name="pass" placeholder="Enter Password">
-      </div>
-
-      <div class="form">
-        <label>Age</label>
-        <input type="number" name="age" placeholder=" Enter Your Age">
-      </div>
-      <br>
-
-      <div class="form">
-        <label>Phone number</label>
-        <input type="number" name="phone number" placeholder="Enter Phone Number">
-      </div>
-      <br>
-
-      <div class="form">
-        <label>Date of birth</label>
-        <input type="date" name="dob">
-      </div>
-      <br>
-
-      <div class="form">
-        <label>Favorite color</label>
-        <select name="favorite color">
-          <option value="red">Red</option>
-          <option value="orange">Orange</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="cyan">Cyan</option>
-          <option value="blue">Blue</option>
-          <option value="purple">Purple</option>
-        </select>
-      </div>
-      <br>
-
-      <div class="form">
-        <label>Gender</label>
-        <select name="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </div>
-      <br>
-      <div class="form">
-        <label>Favorite Fruit</label><br>
-        <select name="fruit">
-          <option value="apple">Apple</option>
-          <option value="orange">Orange</option>
-          <option value="banana">Banana</option>
-          <option value="mango">Mango</option>
-          <option value="watermelon">Watermelon</option>
-        </select>
-      </div>
-
-      <div class="form">
-        <label>What word better discribes your personality?</label><br>
-        <select name="personality">
-          <option value="friendly">Friendly</option>
-          <option value="helpful">Helpful</option>
-          <option value="sportive">Sportive</option>
-          <option value="agressive">Agressive</option>
-          <option value="quite">Quite</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-
-      <div class="form">
-        <label>Wake up time</label>
-        <input type="time">
-      </div>
-
-      <div class="form">
-        <label>Sleep time</label>
-        <input type="time">
-      </div>
-
-      <div class="radio">
-        <label>What would you do in your free time?</label> <br>
-
-        <input type="radio" name="free-time" id="pvd">
-        <label class="cursor" for="pvd">Play video games</label>
-        <br>
-
-        <input type="radio" name="free-time" id="lrnsmthn">
-        <label class="cursor" for="lrnsmthn">Learn something new</label>
-        <br>
-
-        <input type="radio" name="free-time" id="sleep">
-        <label class="cursor" for="sleep">Sleep</label>
-        <br>
-
-        <input type="radio" name="free-time" id="other">
-        <label class="cursor" for="other">Other</label>
-        <br>
-      </div>
-      <br>
-      <br>
-
-      <label>Check all the languages that you can code</label>
-      <br>
-      <input type="checkbox" id="js" name="Javascript">
-      <label class="cursor" for="js">Javascript</label>
-      <br>
-      <input type="checkbox" id="ts" name="Typescript">
-      <label class="cursor" for="ts">Typescript</label>
-      <br>
-      <input type="checkbox" id="j" name="Java">
-      <label class="cursor" for="j">Java</label>
-      <br>
-      <input type="checkbox" id="html" name="HTML">
-      <label class="cursor" for="html">HTML</label>
-      <br>
-      <input type="checkbox" id="css" name="CSS">
-      <label class="cursor" for="css">CSS</label>
-      <br>
-      <input type="checkbox" id="c#" name="C#">
-      <label class="cursor" for="c#">C#</label>
-      <br>
-      <input type="checkbox" id="c" name="C">
-      <label class="cursor" for="c">C</label>
-      <br>
-      <input type="checkbox" id="c++" name="C++">
-      <label class="cursor" for="c++">C++</label>
-      <br>
-      <input type="checkbox" id="python" name="Python">
-      <label class="cursor" for="python">Python</label>
-      <br>
-      <input type="checkbox" id="php" name="php">
-      <label class="cursor" for="php">Php</label>
-      <br>
-      <input type="checkbox" id="vue" name="vue">
-      <label class="cursor" for="vue">Vue</label>
-      <br>
-      <input type="checkbox" id="react" name="React">
-      <label class="cursor" for="react">React</label>
-      <br>
-      <input type="checkbox" id="r" name="R">
-      <label class="cursor" for="r">R</label>
-      <br>
-      <br>
-
-      <!--Textarea-->
-      <label>Message</label><br>
-      <textarea placeholder="Any thing to add"></textarea>
-      <br>
-
-      <p class="middle" id="test">make sure to submit of course</p>
-    </form>
-    <!--/form-->
-    <hr>
-
-    <div id="wor">
-      <div class="radio">
-        <h1>Would You Rather</h1>
-        <br>
-        <label>Eat</label>
-        <br>
-
-        <input type="radio" name="eat" id="rf">
-        <label class="cursor" for="rf">Raw Fish</label>
-        <br>
-
-        <input type="radio" name="eat" id="rc">
-        <label class="cursor" for="rc"> Rotten Chocolate</label>
-        <br>
-
-        <input type="radio" name="eat" id="icw">
-        <label class="cursor" for="icw">3 Ice Creams in Winter</label>
-        <br>
-        <br>
-
-        <label>Do</label>
-        <br>
-
-        <input type="radio" name="do" id="swim">
-        <label class="cursor" for="swim">Swim for 3 hours non-stop</label>
-        <br>
-
-        <input type="radio" name="do" id="tshirt">
-        <label class="cursor" for="tshirt">Wear 5 T-shirts in Summer for a week</label>
-        <br>
-
-        <input type="radio" name="do" id="sun">
-        <label class="cursor" for="sun">Look at the sun for 1 minute</label>
-        <br>
-        <br>
-
-        <label>Excrise</label>
-        <br>
-
-        <input type="radio" name="excrise" id="pushups">
-        <label class="cursor" for="pushups">Do 50 push ups in a row</label>
-        <br>
-
-        <input type="radio" name="excrise" id="run">
-        <label class="cursor" for="run">Run for 1 hour as fast as you can</label>
-        <br>
-
-        <input type="radio" name="excrise" id="hop">
-        <label class="cursor" for="hop">Hop 100 times non-stop</label>
-        <br>
-        <br>
-
-        <!--submit-->
-        <p class="middle"><button onclick="myFunction()">Submit</button></p>
-        <br>
-
-        <p class="middle">If you want to know more here is the needed info</p>
-        <p></p>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Gender</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Karim</td>
-              <td>10</td>
-              <td>Male</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
-    </div>
-
-    <!--Last thing before footer-->
-    <p class="middle"><a class="project" href="#">Back to top</a></p>
-
-    <ul>
-      <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
-      <li class="middle">
-        <a class="list-links" href="#wor">Would You Rather</a>
-      </li>
-    </ul>
-
-    <!--Footer-->
-    <footer id="main-footer">
+  
+      <!--Last thing before footer-->
+      <p class="middle"><a class="project" href="#">Back to top</a></p>
+  
       <ul>
-        <li><div class="cursor" onclick="openModal()">Share</div></li>
-        <li><div class="cursor" onclick="openModalForMore()">More...</div></li>
+        <li class="middle"><a class="list-links" href="#form-id">Form</a></li>
+        <li class="middle">
+          <a class="list-links" href="#wor">Would You Rather</a>
+        </li>
       </ul>
-    </footer>
+  
+      <!--Footer-->
+      <footer id="main-footer">
+        <ul>
+          <li><div class="cursor" onclick="openModal()">Share</div></li>
+          <li><div class="cursor" onclick="openModalForMore()">More...</div></li>
+        </ul>
+      </footer>
+    </div>
 
     <!-- Modal -->
     <div class="modal">
@@ -534,20 +536,29 @@
     <div class="more">
       <div class="screen"></div>
       <div class="modal-content">
-        <h1>More...</h1>
+        <h1>Contact</h1>
         <br>
 
         <div class="flex">
-          <a class="share-item" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCJDfJLfnMwPZkCtKSptdwHvzFwddqHLKrSZzxzdRJpZFcXvQsdDLpFDkgtbHRKjKGHXJV" target="_blank">Contact</a>
-
-          <a class="share-item" href="../websites.html" target="_blank">More websites</a>
+          <a class="share-item" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCJDfJLfnMwPZkCtKSptdwHvzFwddqHLKrSZzxzdRJpZFcXvQsdDLpFDkgtbHRKjKGHXJV" target="_blank">Email</a>
+          
+          <a class="share-item" href="https://twitter.com/DarealKarimHa" target="_blank">Twitter</a>
         </div>
         <div class="close">
           <button onclick="closeModalForMore()">Back</button>
         </div>
       </div>
     </div>
+
+    <!-- Loader -->
+    <div class="loader-container">
+      <div>
+        <div class="lds-spinner"></div>
+        <div class="loader"></div>
+        <div class="loader-text">Loading ...</div>
+      </div>
+    </div>
     <script src="script.js"></script>
   
-
+  
 <script src="./script.js"></script></body></html>
