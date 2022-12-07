@@ -15,7 +15,8 @@
           <h1>the collection of my projects</h1>
           <a
             class="project"
-            href="https://karimhatemhosny.github.io/karim-website/"
+            href="Karim's website.html"
+            download
             target="_blank"
             >HTML project</a
           >
@@ -258,7 +259,7 @@
           <br />
   
           <!--submit-->
-          <p class="middle"><button onclick="myFunction()">Submit</button></p>
+          <p class="middle"><button onclick="myFunction1()">Submit</button></p>
           <br />
   
           <p class="middle">If you want to know more here is the needed info</p>
@@ -308,6 +309,12 @@
       <div class="modal-content">
         <h1>Share via...</h1>
         <br />
+        <!-- The text field -->
+        <div class="copy">
+        <input type="text" value="https://kareem-hatem.github.io/form/" id="myInput"><br>
+        <button onclick="myFunction()">Copy URL</button>
+      </div>
+
         <div class="container" class="flex">
           <!--facebook-->
 
@@ -354,13 +361,13 @@
               >
                 <path
                   d="M0,0v455h455V0H0z M352.751,163.259c0.123,2.773,0.186,5.561,0.186,8.36
-          c0,85.403-65.002,183.876-183.873,183.876c-36.496,0-70.466-10.697-99.065-29.037c5.056,0.601,10.199,0.907,15.417,0.907
-          c30.278,0,58.143-10.331,80.262-27.668c-28.28-0.519-52.148-19.204-60.373-44.88c3.948,0.757,7.997,1.163,12.161,1.163
-          c5.894,0,11.604-0.794,17.027-2.268c-29.563-5.939-51.841-32.057-51.841-63.368c0-0.273,0-0.544,0.006-0.814
-          c8.712,4.84,18.676,7.748,29.271,8.084c-17.342-11.589-28.748-31.371-28.748-53.79c0-11.845,3.187-22.945,8.751-32.492
-          c31.873,39.101,79.493,64.828,133.203,67.526c-1.103-4.732-1.677-9.665-1.677-14.729c0-35.688,28.938-64.623,64.626-64.623
-          c18.589,0,35.385,7.847,47.173,20.406c14.719-2.895,28.551-8.276,41.038-15.681c-4.824,15.092-15.071,27.754-28.415,35.754
-          c13.074-1.563,25.528-5.038,37.118-10.178C376.336,142.766,365.38,154.149,352.751,163.259z"
+                  c0,85.403-65.002,183.876-183.873,183.876c-36.496,0-70.466-10.697-99.065-29.037c5.056,0.601,10.199,0.907,15.417,0.907
+                  c30.278,0,58.143-10.331,80.262-27.668c-28.28-0.519-52.148-19.204-60.373-44.88c3.948,0.757,7.997,1.163,12.161,1.163
+                  c5.894,0,11.604-0.794,17.027-2.268c-29.563-5.939-51.841-32.057-51.841-63.368c0-0.273,0-0.544,0.006-0.814
+                  c8.712,4.84,18.676,7.748,29.271,8.084c-17.342-11.589-28.748-31.371-28.748-53.79c0-11.845,3.187-22.945,8.751-32.492
+                  c31.873,39.101,79.493,64.828,133.203,67.526c-1.103-4.732-1.677-9.665-1.677-14.729c0-35.688,28.938-64.623,64.626-64.623
+                  c18.589,0,35.385,7.847,47.173,20.406c14.719-2.895,28.551-8.276,41.038-15.681c-4.824,15.092-15.071,27.754-28.415,35.754
+                  c13.074-1.563,25.528-5.038,37.118-10.178C376.336,142.766,365.38,154.149,352.751,163.259z"
                 />
               </svg>
               <span
@@ -729,6 +736,25 @@
               >
             </div>
           </div>
+          <div class="flex-item">
+            <div class="share-item">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 448 512"
+                >
+                <path
+                  d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+                />
+              </svg>
+
+              <span onclick="myfunction2()">Copy URL</span>
+            </div>
+          </div>
         </div>
         <!--close button-->
 
@@ -747,20 +773,19 @@
 
         <div class="flex">
           <a
-            class="share-item"
-            class="flex-item"
+          class="flex-item"
+          class="share-item"
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCJDfJLfnMwPZkCtKSptdwHvzFwddqHLKrSZzxzdRJpZFcXvQsdDLpFDkgtbHRKjKGHXJV"
             target="_blank"
             >Email</a
           >
           
           <a
-            class="share-item"
-            class="flex-item"
+          class="flex-item"
+          class="share-item"
             href="https://twitter.com/DarealKarimHa"
             target="_blank"
-            >Twitter</a
-          >
+          >Twitter</a>
         </div>
         <div class="close">
           <button onclick="closeModalForMore()">Back</button>
@@ -773,7 +798,7 @@
       <div>
         <div class="lds-spinner"></div>
         <div class="loader"></div>
-        <div class="loader-text">Loading ...</div>
+        <div class="loader-text">Loading...</div>
       </div>
     </div>
     <script src="script.js"></script>
