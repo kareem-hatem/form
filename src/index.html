@@ -311,8 +311,8 @@
         <br />
         <!-- The text field -->
         <div class="copy">
-        <input type="text" value="https://kareem-hatem.github.io/form/" id="myInput"><br>
-        <button onclick="myFunction()">Copy URL</button>
+        <input type="text" value="https://kareem-hatem.github.io/form/" readonly id="myInput"><br>
+        <button onclick="copy()">Copy URL</button>
       </div>
 
         <div class="container" class="flex">
@@ -737,7 +737,7 @@
             </div>
           </div>
           <div class="flex-item">
-            <div class="share-item">
+            <div class="share-item cursor" id="copy">
               
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -752,7 +752,7 @@
                 />
               </svg>
 
-              <span onclick="myfunction2()">Copy URL</span>
+              <span onclick="copy()">Copy URL</span>
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ setTimeout(displayText, 4600);
 
 setTimeout(displayText2, 5000);
 
-function myFunction() {
+function copy() {
   // Get the text field
   var copyText = document.getElementById("myInput");
 
