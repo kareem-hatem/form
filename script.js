@@ -54,7 +54,7 @@ setTimeout(displayText2, 3000);
 
 setTimeout(showPage, 3100);
 
-setTimeout(test, 220000);
+setTimeout(test, 180000);
 
 function copy() {
   // Get the text field
