@@ -18,18 +18,17 @@ function closeModal() {
   }, 500);
 }
 
-const more = document.querySelector(".more");
-
 const loader = document.querySelector(".loader");
 
 const topContainer = document.querySelector(".top-container");
 const loaderContainer = document.querySelector(".loader-container");
 const loaderText = document.querySelector(".loader-text");
-const body = document.querySelector("body")
+const myInput = document.querySelector("#myInput");
+const body = document.querySelector("body");
 
 function showPage() {
-  topContainer.style.display = "unset";
   loaderContainer.style.display = "none";
+  topContainer.style.display = "unset";
   body.style.backgroundColor = "#05c46b"
 }
 function displayText() {
@@ -38,14 +37,17 @@ function displayText() {
 function displayText2() {
   loaderText.innerHTML = "Opening website...";
 }
-
+function openSettings(){
+  settings.style.display = "flex";
+}
 
 function test(){
-  if (confirm ('You seem to like this website, would you like to contact the creator feedback?')) 
-  if(confirm(window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSHwQlmCSsdTSkpxxtRhkMvhfXZmWxKwZbCRPzfKKlrQLnqxsdBmJZBQTmXxlsfNrSGrxCJG')))
-  alert("");
- else{
-  alert("Thanks for your feedback!")
+  const contact = confirm ('You seem to like this website, would you like to contact the creator feedback?');
+  if (contact) {
+    window.open('https://twitter.com/DarealKarimHa');  
+    alert("Thanks for your feedback!")
+  } else {
+    alert("Oh no problem.")
  }
 }
 setTimeout(displayText, 2800);
@@ -54,7 +56,7 @@ setTimeout(displayText2, 3000);
 
 setTimeout(showPage, 3100);
 
-setTimeout(test, 180000);
+setTimeout(test, 480000);
 
 function copy() {
   // Get the text field
@@ -67,6 +69,16 @@ function copy() {
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
 
-  // Alert the copied text
-  alert("Copied the URL to clipboard successfully")
+}
+
+function getFormData() {
+  const form = document.getElementById('form-id');
+  const formData = new FormData(form);
+    
+  console.log('Here is what i learned about you');
+  for (const [key, value] of formData) {
+    if (value) {
+      console.log(`Your ${key} is: ${value}`);
+    }
+  }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="demo (2) (1).ico">
     <title>Form</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -37,10 +38,10 @@
       <h1 id="survey-title">My Survey Form</h1>
 
       <!--Form-->
-      <form action="" id="form-id">
+      <form action="" id="form-id" onchange="getFormData()">
         <div class="form">
           <label>Name</label>
-          <input type="text" name="name" placeholder="Enter Name" />
+          <input type="text" name="name" id="form-name" oninput="" placeholder="Enter Name" />
         </div>
         <br />
 
@@ -73,7 +74,7 @@
 
         <div class="form">
           <label>Date of birth</label>
-          <input type="date" name="dob" />
+          <input type="date" name="date of birth" />
         </div>
         <br />
 
@@ -101,7 +102,7 @@
         <br />
         <div class="form">
           <label>Favorite Fruit</label><br />
-          <select name="fruit">
+          <select name="favorite fruit">
             <option value="apple">Apple</option>
             <option value="orange">Orange</option>
             <option value="banana">Banana</option>
@@ -204,7 +205,6 @@
           maxlength="500"
         ></textarea>
         <br />
-
         <p class="middle" id="test">make sure to submit of course</p>
       </form>
       <!--/form-->
@@ -275,9 +275,13 @@
           <table border="1">
             <thead>
               <tr>
+                <th colspan="4">Info</th>
+              </tr>
+              <tr>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Gender</th>
+                <th>Email</th>
               </tr>
             </thead>
             <tbody>
@@ -285,6 +289,7 @@
                 <td>Karim</td>
                 <td>10</td>
                 <td>Male</td>
+                <td>karimhatemhosny68@gmail.com</td>
               </tr>
             </tbody>
           </table>
@@ -311,12 +316,15 @@
     </div>
 
     <!-- Modal -->
+
     <div class="modal">
       <div class="screen"></div>
       <div class="modal-content">
         <h1>Share via...</h1>
         <br />
+
         <!-- The text field -->
+        
         <div class="copy">
           <input
             type="text"
@@ -328,11 +336,13 @@
         </div>
 
         <div class="container" class="flex">
+          
           <!--facebook-->
 
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -361,6 +371,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -395,6 +406,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -442,12 +454,13 @@
               >
             </div>
           </div>
-
+          
           <!--Whatsapp-->
-
+          
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -494,6 +507,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -532,6 +546,7 @@
             <div class="share-item">
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg
+                class="app"
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -576,6 +591,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -613,6 +629,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="Reddit"
                 role="img"
@@ -654,7 +671,7 @@
 
           <div class="flex-item">
             <div class="share-item">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="app" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m0 0h24v24h-24zm12.8 13.446 4.339-8.303h-1.871q-2.143 4.018-2.839 5.786l-.375.96-.32-.75c-.96-2.374-1.931-4.348-3.022-6.243l.129.243h-1.984l4.286 8.2v5.52h1.657z"
                 />
@@ -672,6 +689,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+               class="app"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -706,6 +724,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+                class="app"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
@@ -729,6 +748,7 @@
           <div class="flex-item">
             <div class="share-item">
               <svg
+               class="app"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
@@ -751,6 +771,7 @@
           <div class="flex-item">
             <div class="share-item cursor" id="copy">
               <svg
+                class="app"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
@@ -776,7 +797,7 @@
       </div>
     </div>
 
-    <!-- Loader -->
+   <!-- Loader -->
 
     <div class="loader-container">
       <div>
