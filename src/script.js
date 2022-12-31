@@ -37,10 +37,6 @@ function displayText() {
 function displayText2() {
   loaderText.innerHTML = "Opening website...";
 }
-function openSettings(){
-  settings.style.display = "flex";
-}
-
 function test(){
   const contact = confirm ('You seem to like this website, would you like to contact the creator feedback?');
   if (contact) {
@@ -81,4 +77,14 @@ function getFormData() {
       console.log(`Your ${key} is: ${value}`);
     }
   }
+}
+
+const qrCode = document.querySelector(".qr-code");
+
+
+function qrcodeOpen(){
+  qrCode.style.display = 'flex';
+}
+function closeQrCode(){
+  qrCode.style.display = 'none';
 }

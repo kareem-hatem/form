@@ -316,14 +316,13 @@
         <br>
 
         <!-- The text field -->
-        
+
         <div class="copy">
           <input type="text" value="https://kareem-hatem.github.io/form/" readonly="" id="myInput"><br>
           <button onclick="copy()">Copy URL</button>
         </div>
 
-        <div class="container">
-          
+        <div class="container flex">
           <!--facebook-->
 
           <div class="flex-item">
@@ -375,9 +374,9 @@
               <span><a href="https://www.web.telegram.org" target="_blank">Telegram</a></span>
             </div>
           </div>
-          
+
           <!--Whatsapp-->
-          
+
           <div class="flex-item">
             <div class="share-item">
               <svg class="app" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background: new 0 0 455.731 455.731" xml:space="preserve">
@@ -547,17 +546,69 @@
               <span onclick="copy()">Copy URL</span>
             </div>
           </div>
-        </div>
-        
-        <!--close button-->
 
-        <div class="close">
-          <button onclick="closeModal()">Back</button>
+          <div class="flex-item">
+            <div class="share-item">
+              
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+              <svg class="app" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M6 0h-6v6h6v-6zM5 5h-4v-4h4v4z"></path>
+                <path d="M2 2h2v2h-2v-2z"></path>
+                <path d="M0 16h6v-6h-6v6zM1 11h4v4h-4v-4z"></path>
+                <path d="M2 12h2v2h-2v-2z"></path>
+                <path d="M10 0v6h6v-6h-6zM15 5h-4v-4h4v4z"></path>
+                <path d="M12 2h2v2h-2v-2z"></path>
+                <path d="M2 7h-2v2h3v-1h-1z"></path>
+                <path d="M7 9h2v2h-2v-2z"></path>
+                <path d="M3 7h2v1h-2v-1z"></path>
+                <path d="M9 12h-2v1h1v1h1v-1z"></path>
+                <path d="M6 7v1h-1v1h2v-2z"></path>
+                <path d="M8 4h1v2h-1v-2z"></path>
+                <path d="M9 8v1h2v-2h-3v1z"></path>
+                <path d="M7 6h1v1h-1v-1z"></path>
+                <path d="M9 14h2v2h-2v-2z"></path>
+                <path d="M7 14h1v2h-1v-2z"></path>
+                <path d="M9 11h1v1h-1v-1z"></path>
+                <path d="M9 3v-2h-1v-1h-1v4h1v-1z"></path>
+                <path d="M12 14h1v2h-1v-2z"></path>
+                <path d="M12 12h2v1h-2v-1z"></path>
+                <path d="M11 13h1v1h-1v-1z"></path>
+                <path d="M10 12h1v1h-1v-1z"></path>
+                <path d="M14 10v1h1v1h1v-2h-1z"></path>
+                <path d="M15 13h-1v3h2v-2h-1z"></path>
+                <path d="M10 10v1h3v-2h-2v1z"></path>
+                <path d="M12 7v1h2v1h2v-2h-2z"></path>
+              </svg>
+              <span onclick="qrcodeOpen()">QR Code</span>
+            </div>
+          </div>
+
+          <!--close button-->
+          <br>
+          <div class="close">
+            <button onclick="closeModal()">Back</button>
+          </div>
         </div>
       </div>
     </div>
 
-   <!-- Loader -->
+    <!--qrcode-->
+
+    <div class="qr-code">
+      <div class="qr-screen"></div>
+      <div class="qr-code-content">
+        <p class="qr-paragraph">Scan this QR code</p>
+        <img src="images/qr code.jpeg" id="qr-img">
+
+        <!--close button-->
+
+        <div class="close">
+          <button onclick="closeQrCode()">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader -->
 
     <div class="loader-container">
       <div>
