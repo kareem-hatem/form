@@ -1,6 +1,3 @@
-function myFunction1() {
-  alert("Your answers will be sent to the creator");
-}
 
 const modal = document.querySelector(".modal");
 
@@ -46,11 +43,11 @@ function test(){
     alert("Oh no problem.")
  }
 }
-setTimeout(displayText, 2800);
+setTimeout(displayText, 3800);
 
-setTimeout(displayText2, 3000);
+setTimeout(displayText2, 4000);
 
-setTimeout(showPage, 3100);
+setTimeout(showPage, 4100);
 
 setTimeout(test, 480000);
 
