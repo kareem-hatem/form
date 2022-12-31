@@ -243,14 +243,14 @@ a {
   100% {
     opacity: 0;
   }
-} 
+}
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid rgb(84, 84, 84);
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 1.5s forwards infinite;
+  animation: spin 1.25s forwards infinite;
   margin: auto;
 }
 

@@ -85,3 +85,18 @@ function qrcodeOpen(){
 function closeQrCode(){
   qrCode.style.display = 'none';
 }
+
+const button = document.querySelector('.button')
+
+const shareData = {
+  title: 'Form',
+  url: 'https://kareem-hatem.github.io/form/'
+}
+
+button.addEventListener('click', async () => {
+  try {
+    await navigator.share(shareData)
+  } catch(err){
+    alert(`Error ${err}`)
+  }
+});
